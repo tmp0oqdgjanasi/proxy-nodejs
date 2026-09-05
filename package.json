@@ -1,0 +1,13 @@
+{
+  "name": "vital-data-hard-cut-relay",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Concurrent-safe Vital Data HTTP/HTTPS proxy relay with strict 100,000,000-byte account quota",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

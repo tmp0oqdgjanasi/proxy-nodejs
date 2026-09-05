@@ -1,0 +1,45 @@
+{
+  "listen": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+
+  "quota": {
+    "bytes_per_account": 100000000
+  },
+
+  "auth": {
+    "enabled": true,
+    "username": "relayuser",
+    "password": "CHANGE_THIS_PASSWORD"
+  },
+
+  "ip_whitelist": {
+    "enabled": true,
+    "ips": [
+      "127.0.0.1",
+      "YOUR_CLIENT_IP"
+    ]
+  },
+
+  "upstream": {
+    "connect_timeout_ms": 15000,
+    "retry_on_connect_failure": true
+  },
+
+  "health_check": {
+    "interval_ms": 30000,
+    "timeout_ms": 5000,
+    "failure_cooldown_ms": 60000
+  },
+
+  "server": {
+    "max_header_bytes": 65536,
+    "max_connections": 1000,
+    "status_interval_ms": 60000
+  },
+
+  "reality": {
+    "server_name": "example.com"
+  }
+}
